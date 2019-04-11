@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style/style.css">
+   <link rel="stylesheet" href="style/style.scss">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
+   <title>PRICEBOX</title>
+</head>
+
+<body>
+   <div class="wrapper">
+
+
+      <header>
+         <nav>
+            <div class="burger"><img src="/img/Group.svg" alt=""></div>
+            <div class="logo">
+               <!-- <img src="img/Group.svg" alt=""> -->
+               <span>pricebox</span>
+            </div>
+            <div class="enter"><button id="in">Войти</button></div>
+         </nav>
+         <h1>Быстро доставим <span>еду</span><br> по Санкт-Петербургу</h1>
+         <p>Укажите ваше местоположение, чтобы мы смогли <br> предложить вам список доступных ресторанов,<br>
+            маркетов и
+            аптек</p>
+         <div class="search">
+            <img src="/img/log.png" alt="">
+            <input type="text" name="locate" id="locate" placeholder="Куда доставить?" autofocus>
+            <button id="go">Найти</button>
+         </div>
+      </header>
+      <section class="one">
+         <h2 class="visually-hidden">section-one</h2>
+         <div class="menu">
+
+            <ul class="menu-nav">
+               <li><a href="#">Все</a></li>
+               <li><a href="#">Еда</a></li>
+               <li><a href="#">Продукты</a></li>
+               <li><a href="#">Вода</a></li>
+               <li><a href="#">Цветы</a></li>
+               <li><a href="#">Лекарства</a></li>
+               <li><a href="#">Красота</a></li>
+               <li><a href="#">Хозтовары</a></li>
+               <span id="btn-menu"></span>
+            </ul>
+         </div>
+         <div class="sort">
+            <div class="sort-search">
+               <img src="img/search.png" alt="">
+               <input class=any-search"" type="text" placeholder="Ресторан, магазин, блюдо, или товар.."></input>
+            </div>
+            <div class="btn">
+               <button>На сейчас</button>
+               <button>С отзывами</button>
+               <button>Сначала дешевые</button>
+               <button>Популярные</button>
+               <button>Еще</button>
+            </div>
+         </div>
+         <div class="content">
+            <div class="dish-all">
+               <div class="dish-column1">
+                  <div class="dish">
+                     <div class="dish-view">
+                        <img src="img/img-5.png" alt="">
+                        <div class="dish-name">
+                           <span>Буше</span>
+                           <span>4,7</span>
+                        </div>
+                        <div class="order">
+                           <img src="img/Group.svg" alt="">
+                           <span>Заказ от 400Р</span>
+                           <span>15-20 мин</span>
+                        </div>
+                        <div class="choise">
+                           <a href="#">Ресторан</a>
+                           <a href="#">Выпечка</a>
+                           <a href="#">Бургеры</a>
+                        </div>
+                     </div>
+                     <div class="dish">
+                        <div class="dish-view">
+                           <img src="img/img-2.png" alt="">
+                           <div class="dish-name">
+                              <span>Джон Донн</span>
+                              <span>4,7</span>
+                           </div>
+                           <div class="order">
+                              <img src="img/Group.svg" alt="">
+                              <span>Заказ от 400Р</span>
+                              <span>15-20 мин</span>
+                           </div>
+                           <div class="choise">
+                              <a href="#">Ресторан</a>
+                              <a href="#">Выпечка</a>
+                              <a href="#">Бургеры</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="dish-column2">
+                  <div class="dish">
+                     <div class="dish-view">
+                        <img src="img/img-4.png" alt="">
+                        <div class="dish-name">
+                           <span>Томбик Хаус</span>
+                           <span>4,7</span>
+                        </div>
+                        <div class="order">
+                           <img src="img/Group.svg" alt="">
+                           <span>Заказ от 400Р</span>
+                           <span>15-20 мин</span>
+                        </div>
+                        <div class="choise">
+                           <a href="#">Ресторан</a>
+                           <a href="#">Выпечка</a>
+                           <a href="#">Бургеры</a>
+                        </div>
+                     </div>
+                     <div class="dish">
+                        <div class="dish-view">
+                           <img src="img/img-1.png" alt="">
+                           <div class="dish-name">
+                              <span>ФруктоМаркет</span>
+                              <span>4,7</span>
+                           </div>
+                           <div class="order">
+                              <img src="img/Group.svg" alt="">
+                              <span>Заказ от 400Р</span>
+                              <span>15-20 мин</span>
+                           </div>
+                           <div class="choise">
+                              <a href="#">Ресторан</a>
+                              <a href="#">Выпечка</a>
+                              <a href="#">Бургеры</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="dish-column3">
+                  <div class="dish">
+                     <div class="dish-view">
+                        <img src="img/img-3.png" alt="">
+                        <div class="dish-name">
+                           <span>Pizza Express</span>
+                           <span>4,7</span>
+                        </div>
+                        <div class="order">
+                           <img src="img/Group.svg" alt="">
+                           <span>Заказ от 400Р</span>
+                           <span>15-20 мин</span>
+                        </div>
+                        <div class="choise">
+                           <a href="#">Ресторан</a>
+                           <a href="#">Выпечка</a>
+                           <a href="#">Бургеры</a>
+                        </div>
+                     </div>
+                     <div class="dish">
+                        <div class="dish-view">
+                           <img src="img/img-3.png" alt="">
+                           <div class="dish-name">
+                              <span>Pizza Express</span>
+                              <span>4,7</span>
+                           </div>
+                           <div class="order">
+                              <img src="img/Group.svg" alt="">
+                              <span>Заказ от 400Р</span>
+                              <span>15-20 мин</span>
+                           </div>
+                           <div class="choise">
+                              <a href="#">Ресторан</a>
+                              <a href="#">Выпечка</a>
+                              <a href="#">Бургеры</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <button id="more">Показать больше</button>
+      </section>
+      <section class="two">
+         <div class="best">
+            <h2>Лучшие предложения</h2>
+            <p>акции на этой неделе</p>
+         </div>
+         <div class="best-all">
+            <div class="best-dishes">
+               <img src="img/Rectangle2.png" alt="">
+               <p>Рамен с курицей <br> в подарок</p>
+               <p>Получите рамен с курицей в <br> подарок при заказе от 1000Р.<br> Просто введите промокод</p>
+               <span>plusramen</span>
+               <span class="line"></span>
+               <span>Буше</span>
+            </div>
+            <div class="best-dishes">
+               <img src="img/Rectangle2.png" alt="">
+               <p>Рамен с курицей <br> в подарок</p>
+               <p>Получите рамен с курицей в <br> подарок при заказе от 1000Р.<br> Просто введите промокод</p>
+               <span>plusramen</span>
+               <span class="line"></span>
+               <span>Буше</span>
+            </div>
+            <div class="best-dishes">
+               <img src="img/Rectangle2.png" alt="">
+               <p>Рамен с курицей <br> в подарок</p>
+               <p>Получите рамен с курицей в <br> подарок при заказе от 1000Р.<br> Просто введите промокод</p>
+               <span>plusramen</span>
+               <span class="line"></span>
+               <span>Буше</span>
+            </div>
+         </div>
+         <button id="show-all">Все акции</button>
+      </section>
+      <footer>
+         <div class="footer">
+            <div class="f-col1">
+               <div class="logo">
+                  <img src="img/Group.svg" alt="">
+                  <span>pricebox</span>
+               </div>
+               <p>Copyright &copy; 2019 PriceBox</p>
+               <p>Все права защищены</p>
+               <div class="sotials">
+                  <img src="/img/Group6.png" alt="">
+               </div>
+            </div>
+            <div class="f-col2">
+               <h3>Важное</h3>
+               <p><a href="#">О сервисе</a></p>
+               <p><a href="#">Пользовательское соглашение</a></p>
+               <p><a href="#">Вопросы и ответы</a></p>
+               <p><a href="#">Мобильные приложения</a></p>
+               <p><a href="#">Бонусная программа</a></p>
+            </div>
+            <div class="f-col3">
+               <h3>Компания</h3>
+               <p><a href="#">Партнерство для ресторанов</p>
+               <p><a href="#">Франшиза</a></p>
+               <p><a href="#">Карьера</a></p>
+               <p><a href="#">Контакты</a></p>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+   <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+   <script>
+      var butt = document.getElementById('btn-menu');
+      butt.onclick = function () {
+         var a = document.getElementsByClassName('menu-nav');
+         let wrap = document.querySelector('#btn-menu');
+
+         for (var i = 0; i < a.length; i++) {
+            a[i].classList.toggle('menu-nav-active');
+            wrap.classList.toggle('noMagic');
+         }
+      }
+      
+   </script>
+
+</body>
+
+</html>
