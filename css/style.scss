@@ -75,6 +75,7 @@ nav {
    right: -25px;
    top: 15px;
 }
+
 #btn-menu::before {
    content: '>>';
    color: #fff;
@@ -84,10 +85,12 @@ nav {
    left: 55%;
    top: 30%;
 }
+
 .noMagic#btn-menu {
    transform: rotate(-180deg);
    transition: 1s;
 }
+
 .enter {
    display: flex;
    align-items: center;
@@ -500,7 +503,7 @@ h2 {
    color: #0A1F44;
 }
 
-.best-all>div>p:nth-child(3){
+.best-all>div>p:nth-child(3) {
    font-style: normal;
    font-weight: 500;
    font-size: 16px;
@@ -710,6 +713,7 @@ h3 {
       background-color: #ccc;
       opacity: .9;
    }
+
    .sort {
       margin-top: 0;
       position: relative;
