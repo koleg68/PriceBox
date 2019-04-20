@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
    <meta charset="UTF-8">
@@ -221,6 +221,14 @@
          </div>
          <button id="show-all">Все акции</button>
       </section>
+      <form action="mailto:9326538@mail.ru" class="enter">
+         <label>Введите вашу эл.почту</label>
+         <input type="text" name="email" placeholder="example@example.ru">
+         <label>Введите ваш пароль</label>
+         <input type="password" name="password" placeholder="ваш пароль...">
+         <input type="submit" id="conf" value="Подтвердить">
+         <p>Регистрация...</p>
+      </form>
       <footer>
          <div class="footer">
             <div class="f-col1">
@@ -264,6 +272,11 @@
             a[i].classList.toggle('menu-nav-active');
             wrap.classList.toggle('noMagic');
          }
+      }
+      var ent = document.getElementById('in');
+      ent.onclick = function () {
+         var formEnter = document.getElementsByTagName('form')[0];
+         formEnter.style.display = 'block';
       }
       
    </script>
