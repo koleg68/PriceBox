@@ -735,6 +735,10 @@ form.enter p:hover {
   cursor: pointer;
 }
 
+.border {
+  border: 2px dashed #182C4F;
+}
+
 @media only screen and (max-width: 1135px) {
   .sort {
     -webkit-box-orient: vertical;
