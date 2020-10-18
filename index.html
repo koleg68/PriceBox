@@ -259,29 +259,14 @@
             </div>
          </div>
       </footer>
+      <div id="top">
+         <img src="img/jquery-top.png" alt="плавная прокрутка наверх">
+      </div>
 
    </div>
-   <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
    <script src="script/script.js"></script>
 
-   <script>
-      var butt = document.getElementById('btn-menu');
-      butt.onclick = function () {
-         var a = document.getElementsByClassName('menu-nav');
-         let wrap = document.querySelector('#btn-menu');
-
-         for (var i = 0; i < a.length; i++) {
-            a[i].classList.toggle('menu-nav-active');
-            wrap.classList.toggle('noMagic');
-         }
-      }
-      var ent = document.getElementById('in');
-      ent.onclick = function () {
-         var formEnter = document.getElementsByTagName('form')[0];
-         formEnter.style.display = 'block';
-      }
-      
-   </script>
 
 </body>
 
