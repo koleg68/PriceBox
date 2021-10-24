@@ -9,8 +9,9 @@ button {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #F2F2F2;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+  font-size: clamp(12px, 2vw, 18px);
 }
 
 .visually-hidden {
@@ -40,12 +41,15 @@ header {
 nav {
   height: 80px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -56,9 +60,11 @@ nav {
 
 .logo {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -66,11 +72,10 @@ nav {
 .logo span {
   font-style: normal;
   font-weight: bold;
-  font-size: 27px;
   line-height: normal;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #0A1F44;
+  color: #0a1f44;
 }
 
 #btn-menu {
@@ -78,16 +83,16 @@ nav {
   width: 50px;
   height: 50px;
   background-color: #ccc;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   position: absolute;
-  right: -25px;
+  right: -30px;
   top: 15px;
 }
 
 #btn-menu::before {
-  content: '>>';
+  content: ">>";
   color: #fff;
-  font-size: 18px;
   font-weight: 900;
   position: absolute;
   left: 55%;
@@ -96,16 +101,20 @@ nav {
 
 .noMagic#btn-menu {
   -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
   -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 
 .enter {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -114,12 +123,12 @@ nav {
   width: 96px;
   height: 32px;
   background-color: #ffad0d;
-  border-radius: 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   padding: 8px 4px;
-  color: #0A1F44;
+  color: #0a1f44;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
   line-height: 16px;
   margin: 0 36px 0 20px;
   text-align: center;
@@ -129,10 +138,9 @@ h1 {
   margin: 100px 0 0 160px;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
   line-height: 47px;
   letter-spacing: 0.5px;
-  color: #0A1F44;
+  color: #0a1f44;
 }
 
 header > h1 > span {
@@ -143,7 +151,6 @@ header p {
   margin: 12px 0 0 160px;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 24px;
   color: #445571;
 }
@@ -153,17 +160,21 @@ header p {
   height: 80px;
   background-color: #fff;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-shadow: 0px 0px 10px rgba(10, 31, 68, 0.1), 0px 0px 1px rgba(10, 31, 68, 0.08);
           box-shadow: 0px 0px 10px rgba(10, 31, 68, 0.1), 0px 0px 1px rgba(10, 31, 68, 0.08);
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   position: absolute;
   left: 160px;
   bottom: -10%;
@@ -173,22 +184,24 @@ header p {
   width: 112px;
   height: 48px;
   background-color: #ffad0d;
-  border-radius: 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   margin-right: 16px;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 20px;
   text-align: center;
-  color: #0A1F44;
+  color: #0a1f44;
 }
 
 .sort-search {
   width: 40%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -201,16 +214,14 @@ header p {
 .sort-search > input[placeholder] {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 20px;
-  color: #8A94A6;
+  color: #8a94a6;
 }
 
 .search > input[autofocus] {
   padding-left: 10px;
   outline: none;
   width: 70%;
-  font-size: 14px;
   border: none;
 }
 
@@ -219,7 +230,7 @@ header p {
 }
 
 section.one {
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
   min-height: 200px;
 }
 
@@ -234,39 +245,44 @@ section {
 .menu ul {
   height: 32px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
 .menu li {
   list-style: none;
-  border: 1px solid #E1E4E8;
+  border: 1px solid #e1e4e8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 100px;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
   margin-right: 8px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .menu li a {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: #0A1F44;
+  color: #0a1f44;
   padding: 18px;
 }
 
@@ -277,19 +293,23 @@ section {
 .sort {
   max-width: 1100px;
   height: 48px;
-  background: #FFFFFF;
-  border: 1px solid #E5E8EB;
+  background: #ffffff;
+  border: 1px solid #e5e8eb;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   margin: 30px 2% 30px 0;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -305,9 +325,8 @@ section {
   margin-right: 197px;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 20px;
-  color: #8A94A6;
+  color: #8a94a6;
 }
 
 .btn {
@@ -317,30 +336,33 @@ section {
 .btn button {
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: #0A1F44;
+  color: #0a1f44;
   padding: 8px;
-  border: 1px solid #E5E8EB;
+  border: 1px solid #e5e8eb;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 6px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn button:hover {
-  background-color: #8A94A6;
+  background-color: #8a94a6;
   color: white;
 }
 
 .dish-all {
   max-width: 1100px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 2%;
@@ -355,17 +377,17 @@ section {
 .dish-view {
   max-width: 352px;
   height: 328px;
-  border: 1px solid #E1E4E8;
+  border: 1px solid #e1e4e8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   margin-bottom: 32px;
   padding: 4% 4% 0 4%;
 }
 
 .sort > input {
   width: 40%;
-  font-size: 14px;
   border: none;
   outline: none;
 }
@@ -377,9 +399,11 @@ section {
 
 .dish-name {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 48px;
@@ -390,18 +414,16 @@ section {
   padding: 19px 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
   line-height: 24px;
-  color: #182C4F;
+  color: #182c4f;
 }
 
 .dish-view span:last-child {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   line-height: 16px;
   text-align: right;
-  color: #0A1F44;
+  color: #0a1f44;
   padding: 19px 25px 19px 0;
   position: relative;
 }
@@ -409,19 +431,23 @@ section {
 .dish-name span:last-child::before {
   content: url(/img/Star1.png);
   display: block;
-  background-size: 16px 16px;
+  -webkit-background-size: 16px 16px;
+          background-size: 16px 16px;
   position: absolute;
   left: -20px;
 }
 
 .order {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -445,7 +471,7 @@ section {
 }
 
 .btn > button:nth-child(5)::before {
-  content: '...';
+  content: "...";
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -461,9 +487,8 @@ section {
 .order span {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   line-height: 16px;
-  color: #0A1F44;
+  color: #0a1f44;
 }
 
 .order > span:nth-child(2) {
@@ -479,13 +504,13 @@ section {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 11px;
   line-height: 16px;
   text-align: center;
-  color: #8A94A6;
+  color: #8a94a6;
   background-color: #f1f2f4;
   padding: 4px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
 
 #more {
@@ -496,11 +521,11 @@ section {
   background-color: #ffad0d;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 20px;
   text-align: center;
-  color: #0A1F44;
-  border-radius: 6px;
+  color: #0a1f44;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
 }
 
 section.one {
@@ -515,15 +540,13 @@ section.two {
 h2 {
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
   line-height: 38px;
-  color: #0A1F44;
+  color: #0a1f44;
 }
 
 .two p {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 24px;
   color: #445571;
   margin-bottom: 24px;
@@ -531,6 +554,7 @@ h2 {
 
 .best-all {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 32px;
@@ -541,16 +565,14 @@ h2 {
 .best-all > div > p:nth-child(2) {
   font-style: normal;
   font-weight: 900;
-  font-size: 16px;
   line-height: 24px;
   margin: 0 0 15px 24px;
-  color: #0A1F44;
+  color: #0a1f44;
 }
 
 .best-all > div > p:nth-child(3) {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: 1px;
   margin: 0 0 0 24px;
@@ -558,10 +580,11 @@ h2 {
 }
 
 .best-dishes {
-  border: 1px solid #E1E4E8;
+  border: 1px solid #e1e4e8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   width: 33%;
   padding: 1% 1% 0 1%;
 }
@@ -596,27 +619,26 @@ h2 {
   background-color: #ffad0d;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 20px;
   text-align: center;
-  color: #0A1F44;
-  border-radius: 6px;
+  color: #0a1f44;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
 }
 
 footer {
   padding: 30px 0 20px 160px;
-  border-top: 1px solid #E5E8EB;
+  border-top: 1px solid #e5e8eb;
   background-color: #fff;
 }
 
 footer div.logo:nth-child(1) > span:nth-child(2) {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
   line-height: normal;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #0A1F44;
+  color: #0a1f44;
 }
 
 footer div.logo:nth-child(1) > img:nth-child(1) {
@@ -625,12 +647,10 @@ footer div.logo:nth-child(1) > img:nth-child(1) {
 
 .f-col1 > p:nth-child(2) {
   margin-top: 20px;
-  font-size: 14px;
 }
 
 .f-col1 > p:nth-child(3) {
   margin-top: 10px;
-  font-size: 14px;
 }
 
 .sotials {
@@ -639,9 +659,11 @@ footer div.logo:nth-child(1) > img:nth-child(1) {
 
 .footer {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
@@ -653,7 +675,6 @@ footer div.logo:nth-child(1) > img:nth-child(1) {
 h3 {
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
   line-height: 25px;
   margin-bottom: 20px;
   color: #445571;
@@ -664,10 +685,9 @@ h3 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   margin-bottom: 15px;
-  color: #0A1F44;
+  color: #0a1f44;
   text-decoration: none;
 }
 
@@ -679,9 +699,8 @@ h3 {
   padding: 30px 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
   line-height: 24px;
-  color: #182C4F;
+  color: #182c4f;
   display: block;
 }
 
@@ -691,10 +710,12 @@ form.enter {
   height: 225px;
   padding: 0 10px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
@@ -715,7 +736,8 @@ input {
   background: #fff;
   height: 20px;
   width: 100%;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   outline: none;
 }
 
@@ -727,7 +749,6 @@ input {
 }
 
 form.enter p {
-  font-size: 10px;
   margin-top: 10px;
   width: 100%;
   text-align: left;
@@ -739,7 +760,7 @@ form.enter p:hover {
 }
 
 .border {
-  border: 2px dashed #182C4F;
+  border: 2px dashed #182c4f;
 }
 
 #top {
@@ -747,27 +768,30 @@ form.enter p:hover {
   right: 1%;
   cursor: pointer;
   display: none;
-  font-size: 150%;
   position: fixed;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 1135px) {
   .sort {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     height: 80px;
   }
   .sort-search {
     width: 100%;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
@@ -814,17 +838,19 @@ form.enter p:hover {
   }
   .sort-search {
     -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .menu ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
     background-color: #ccc;
-    opacity: .9;
+    opacity: 0.9;
   }
   .sort {
     margin-top: 0;
@@ -835,6 +861,7 @@ form.enter p:hover {
   .dish-all {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -846,14 +873,9 @@ form.enter p:hover {
   .dish-view {
     margin: 0 auto 20px;
   }
-  .best-all > div > p:nth-child(2) {
-    font-size: 14px;
-  }
-  .best-all > div > p:nth-child(3) {
-    font-size: 12px;
-  }
   .menu li {
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: 30px;
@@ -873,24 +895,28 @@ form.enter p:hover {
     left: 45px;
   }
   .menu-nav {
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
     z-index: 5;
     -webkit-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
             transform: translateX(-110%);
     position: fixed;
     top: 10px;
   }
   .menu-nav-active {
     -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
             transform: translateX(0%);
   }
 }
 
 @media only screen and (max-width: 600px) {
   .footer {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     position: relative;
     height: 350px;
   }
@@ -915,11 +941,9 @@ form.enter p:hover {
 @media only screen and (max-width: 460px) {
   nav {
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .best-dishes > span {
-    font-size: 12px;
   }
   .best-dishes span.line {
     width: 75px;
@@ -931,9 +955,6 @@ form.enter p:hover {
   .burger {
     margin-left: 0;
   }
-  .sort-search > input[placeholder] {
-    font-size: 10px;
-  }
   .enter button {
     margin: 0 4% 0 2%;
   }
@@ -944,7 +965,8 @@ form.enter p:hover {
     margin-left: 5px;
   }
   .menu li {
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
   }
   .sort img {
     margin: 0 5px 0 5px;
@@ -958,8 +980,9 @@ form.enter p:hover {
 
 @media only screen and (max-width: 370px) {
   nav {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */
